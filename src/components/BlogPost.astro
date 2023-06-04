@@ -1,0 +1,25 @@
+---
+const { url, title, description } = Astro.props;
+---
+
+<div>
+  <a href={url}>{title}</a>
+  <p>{description}</p>
+</div>
+
+<style>
+  div,
+  a {
+    box-sizing: border-box;
+    background-color: rgb(132, 64, 234);
+    color: white;
+    max-width: 50%;
+    border-radius: 5px;
+    padding: 0.2rem;
+    margin: 0.1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+</style>
